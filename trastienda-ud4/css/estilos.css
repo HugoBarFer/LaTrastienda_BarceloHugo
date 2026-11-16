@@ -3,9 +3,24 @@ body{
     color:rgb(10, 186, 1);
 }
 
+nav a[aria-current="page"] {
+  color: #2563eb;
+  font-weight: 700;
+}
 header{
     color:rgb(7, 134, 1);
 }
-a{
+
+
+nav a:not([aria-current="page"]){
     color:rgb(85, 99, 85);
+}
+
+nav a:focus-visible{
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+nav a:hover{
+    color: #1e293b;
 }
