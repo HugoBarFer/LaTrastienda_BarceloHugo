@@ -30,12 +30,25 @@
     --brand:          var(--color-primary-500);
     --bg-surface:     #ffffff;
 
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+    --text-xs:   0.75rem;   /* Caption (12 px) */
+    --text-sm:   0.875rem;  /* Body Small (14 px) */
+    --text-base: 1rem;      /* Body (16 px) */
+    --text-lg:   1.125rem;  /* H3 (18 px) */
+    --text-xl:   1.25rem;   /* H2 (20 px) */
+    --text-2xl:  1.5rem;    /* H1 (24 px) */
+    --text-3xl:  1.875rem;  /* Display (30 px) */
 
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
-    color:rgb(10, 186, 1);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    min-height: 100dvh;
 }
 
 nav a[aria-current="page"] {
@@ -105,6 +118,7 @@ nav{
 }
 
 .card{
+    max-width: 65ch;
     background-color: var(--bg-surface);
     border: 1px solid var(--border-subtle);
     border-radius: 12px;
